@@ -50,13 +50,13 @@ export class Success extends Component {
 						
 
 
-								<CardMedia
+								{/* <CardMedia
 										style={{height: 0,
 											margin: 100,
 											paddingTop: '56.5%'}}
 										image='./done.gif'
 										title="house-card"
-									/>
+									/> */}
 					</React.Fragment>
 				</MuiThemeProvider>
 			</div>

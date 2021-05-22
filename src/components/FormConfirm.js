@@ -95,13 +95,13 @@ export class FormConfirm extends Component {
 						/>
 
 
-								<CardMedia
+								{/* <CardMedia
 										style={{height: 0,
 											margin: 100,
 											paddingTop: '56.5%'}}
 										image='./sponge_final.gif'
 										title="house-card"
-									/>
+									/> */}
 					</React.Fragment>
 				</MuiThemeProvider>
 			</div>

@@ -215,7 +215,7 @@ export class FormCases extends Component {
 							<option aria-label="None" value="" />
 							<option value={1}>House locality A</option>
 							<option value={2}>House locality B</option>
-							<option value={3}>Neither A nor B</option>
+							<option value={3}>Prefer my current location</option>
 						</Select>
 						</FormControl>
 

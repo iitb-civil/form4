@@ -118,8 +118,8 @@ export class FormPersonalDetails extends Component {
 						<br/>
 						<TextField 
 							style={{width:500}}	
-							hintText="Area / Locality eg. POWAI, MALAD"
-							floatingLabelText="Area or Locality of your house"
+							hintText="City eg. Mumbai, Indore"
+							floatingLabelText="City"
 							onChange={handleChange('area')}
 							defaultValue={values.area}
 						/>
