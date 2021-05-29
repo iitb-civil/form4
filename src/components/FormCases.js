@@ -108,7 +108,7 @@ export class FormCases extends Component {
 						</center>
 						<br/>
 						<Grid container>
-								<Grid item xs={6} sm={6} md={6}>
+								<Grid item xs={4} sm={4} md={4}>
 									<Card>
 
 									<CardMedia
@@ -124,7 +124,7 @@ export class FormCases extends Component {
 											<br/>
 											<br/>
 											<Typography variant="body2" color="textPrimary" component="p">
-											Monthly Rent : Rs. { check_rent? times.case_a_rent*10000 : Math.round((times.case_a_rent*values.monthly_rent/1000)*1000) }
+											Monthly Rent : Rs. { check_rent? times.case_a_rent*10000 : Math.round((times.case_a_rent*values.monthly_rent/1000))*1000 }
 											</Typography>
 											<br/>
 											<Typography variant="body2" color={ is_bold_1? "textPrimary": "textSecondary"} component="p">
@@ -144,16 +144,16 @@ export class FormCases extends Component {
 											</Typography>
 											<br/>
 											<Typography variant="body2" color={ is_bold_5? "textPrimary": "textSecondary"} component="p">
-												Travel Time to Park by {dict[values.resto_mode]} : {times.case_a_time[4]} mins
+												Travel Time to Park by {dict[values.garden_mode]} : {times.case_b_time[4]} mins
 											</Typography>
 											<br/>
 											<Typography variant="body2" color={ is_bold_6? "textPrimary": "textSecondary"} component="p">
-												Travel Time to Good Restaurant by {dict[values.garden_mode]} : {times.case_a_time[5]} mins
+												Travel Time to Good Restaurant by {dict[values.resto_mode]} : {times.case_b_time[5]} mins
 											</Typography>
       							</CardContent>
 									</Card>
 								</Grid>
-								<Grid item xs={6} sm={6} md={6}>
+								<Grid item xs={4} sm={4} md={4}>
 								<Card>
 
 									<CardMedia
@@ -169,7 +169,7 @@ export class FormCases extends Component {
 												<br/>
 												<br/>
 												<Typography variant="body2" color="textPrimary" component="p">
-												Monthly Rent : Rs. { check_rent? times.case_b_rent*10000 : Math.round((times.case_b_rent*values.monthly_rent/1000)*1000) }
+												Monthly Rent : Rs. { check_rent? times.case_b_rent*10000 : Math.round((times.case_b_rent*values.monthly_rent/1000))*1000 }
 												</Typography>
 												<br/>
 												<Typography variant="body2" color={ is_bold_1? "textPrimary": "textSecondary"} component="p">
@@ -189,15 +189,65 @@ export class FormCases extends Component {
 											</Typography>
 											<br/>
 											<Typography variant="body2" color={ is_bold_5? "textPrimary": "textSecondary"} component="p">
-												Travel Time to Park by {dict[values.resto_mode]} : {times.case_b_time[4]} mins
+												Travel Time to Park by {dict[values.garden_mode]} : {times.case_b_time[4]} mins
 											</Typography>
 											<br/>
 											<Typography variant="body2" color={ is_bold_6? "textPrimary": "textSecondary"} component="p">
-												Travel Time to Good Restaurant by {dict[values.garden_mode]} : {times.case_b_time[5]} mins
+												Travel Time to Good Restaurant by {dict[values.resto_mode]} : {times.case_b_time[5]} mins
 											</Typography>
 											</CardContent>
 									</Card>
 								</Grid>
+
+
+								<Grid item xs={4} sm={4} md={4}>
+								<Card>
+
+									<CardMedia
+										style={{height: 0,
+											padding: '15%'}}
+										image='./map.png'
+										title="house-card"
+									/>
+
+
+									<CardContent>
+											{house_type_dict[values.type_of_house]} Your locality
+												<br/>
+												<br/>
+												<Typography variant="body2" color="textSecondary" component="p">
+												Monthly Rent : Rs. { check_rent? 10000 : Math.round((values.monthly_rent/1000)*1000) }
+												</Typography>
+												<br/>
+												<Typography variant="body2" color={ "textSecondary"} component="p">
+												Travel Time to work by {dict[values.job_mode]} : {values.job_time} mins
+											</Typography>
+											<br/>
+											<Typography variant="body2" color={"textSecondary"} component="p">
+												Travel Time to School/College by {dict[values.education_mode]} : {values.education_time} mins
+											</Typography>
+											<br/>
+											<Typography variant="body2" color={"textSecondary"} component="p">
+												Travel Time to Shopping by {dict[values.shopping_mode]} : {values.shopping_time} mins
+											</Typography>
+											<br/>
+											<Typography variant="body2" color={"textSecondary"} component="p">
+												Travel Time to Hospital by {dict[values.hospital_mode]} : {values.hospital_time} mins
+											</Typography>
+											<br/>
+											<Typography variant="body2" color={ "textSecondary"} component="p">
+												Travel Time to Park by {dict[values.garden_mode]} : {values.garden_time} mins
+											</Typography>
+											<br/>
+											<Typography variant="body2" color={ "textSecondary"} component="p">
+												Travel Time to Good Restaurant by {dict[values.resto_mode]} : {values.resto_time} mins
+											</Typography>
+											</CardContent>
+									</Card>
+								</Grid>
+
+
+
 						</Grid>
 
 		
