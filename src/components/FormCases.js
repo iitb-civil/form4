@@ -96,7 +96,7 @@ export class FormCases extends Component {
 							User Survey perception for residential choice location
 						</center>
 						<br/>
-							Given a similar type of house (e.g., 1 BHK or 2 BHK) in two different localities, with varying access to
+							Given a similar type of house (e.g., 1 BHK or 2 BHK) in three different localities, with varying access to
 							services, which locality will you choose? <br/><br/> (Please give your choices for different scenarios provided
 							below).
 						<br/>
@@ -212,7 +212,7 @@ export class FormCases extends Component {
 
 
 									<CardContent>
-											{house_type_dict[values.type_of_house]} Your locality
+											{house_type_dict[values.type_of_house]} Your current locality
 												<br/>
 												<br/>
 												<Typography variant="body2" color="textSecondary" component="p">
