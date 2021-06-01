@@ -103,7 +103,7 @@ export class FormCases extends Component {
 						<br/>
 						
 
-						<center>
+						<center style={{fontWeight: "bold"}}>
 						Card - {times.val} / 8
 						</center>
 						<br/>
@@ -254,7 +254,7 @@ export class FormCases extends Component {
 					
 						{/* Values.case_1 = {values[para]} */}
 						<FormControl style={{marginLeft:50, marginTop:33}}>
-						<InputLabel htmlFor="agegrp-native-simple">My Preference</InputLabel>
+						<InputLabel htmlFor="agegrp-native-simple">My Preference for card - {times.val} </InputLabel>
 						
 						<Select
 							native
